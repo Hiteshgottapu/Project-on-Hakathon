@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Profile</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-4">
+    <h1>My Profile</h1>
+    <div>
+      <img id="profilePhoto" src="placeholder.jpg" alt="Profile Photo" style="max-width: 200px; max-height: 200px;">
+    </div>
+    <form id="photoForm" enctype="multipart/form-data">
+      <div class="form-group mt-3">
+        <!-- <label for="photo">Profile Photo:</label> -->
+        <input type="file" id="photo" class="form-control-file" accept="image/*" required>
+      </div>
+      <button class="btn btn-primary mt-2" type="submit">Upload Photo</button>
+    </form>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
